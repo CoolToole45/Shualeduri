@@ -1,0 +1,125 @@
+/* Global Classes Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.Flex_Class {
+    display: flex;
+}
+
+/* Global Classes End */
+
+
+/* Sidebar Start */
+
+.Sidebar {
+    height: 1080px;
+    width: 319px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222222;
+    /* overflow-x: hidden; */
+    padding: 20px;
+}
+
+
+/* Sidebar Top Start */
+.Aside_Top {
+    margin: 0 auto;
+    padding-top: 42px;
+}
+
+.Logo {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.Logo span {
+    font-weight: bolder;
+    font-family: "Avenir LT Pro";
+}
+
+.Logo img {
+    margin-left: 87px;
+}
+
+/* Sidebar Top End */
+
+
+/* Sidebar Middle Start */
+
+.Aside_Middle {
+    margin: 0 auto;
+}
+
+.Sidebar_Nav {
+    padding-top: 106px;
+}
+
+.Sidebar_Nav img {
+    margin-right: 15px;
+}
+
+.Sidebar_Nav ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.Sidebar_Nav li {
+    width: 100%;
+    margin: 60px 0; 
+}
+
+.Sidebar_Nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition:all 0.15s linear;
+}
+
+.Sidebar_Nav li :hover {
+    border: 20px solid #FF2288;
+    background-color: #FF2288;
+    border-radius: 20px;
+}
+/* Sidebar Middle End */
+
+/* Sidebar Bottom Start */
+
+.Aside_Bottom {
+    color: white;
+    margin: 0 auto;
+}
+
+.Aside_Bottom ul {
+    margin-top: 41px;
+    list-style: none;
+    flex-direction: column;
+}
+
+.Aside_Bottom li {
+    margin: 15px 0 15px 15px;
+}
+
+.Aside_Bottom a {
+    display: flex;
+    align-items: center;
+}
+
+.Aside_Bottom img {
+    margin-right: 20px;
+}
+
+.Aside_Bottom span {
+    margin-left: 15px;
+}
+/* Sidebar Bottom End */
+
+/* Sidebar End */
