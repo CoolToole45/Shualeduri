@@ -3,25 +3,37 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    font: inherit    
 }
 
 .Flex_Class {
     display: flex;
 }
 
-/* Global Classes End */
+a {
+    text-decoration: none;
+}
 
+.Page_Container {
+    max-width: 1940px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+/* Global Classes End */
 
 /* Sidebar Start */
 
 .Sidebar {
-    height: 1080px;
+    font: inherit;
+    float: left;
+    height: 1080;
     width: 319px;
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;
-    top: 0;
-    left: 0;
     background-color: #222222;
     /* overflow-x: hidden; */
     padding: 20px;
@@ -42,7 +54,6 @@
 
 .Logo span {
     font-weight: bolder;
-    font-family: "Avenir LT Pro";
 }
 
 .Logo img {
@@ -79,16 +90,17 @@
 .Sidebar_Nav a {
     display: flex;
     align-items: center;
-    text-decoration: none;
     color: white;
     transition:all 0.15s linear;
 }
 
-.Sidebar_Nav li :hover {
+.Sidebar_Nav .Active {
     border: 20px solid #FF2288;
-    background-color: #FF2288;
     border-radius: 20px;
+    background-color: #FF2288;
+    margin-left: -20px;
 }
+
 /* Sidebar Middle End */
 
 /* Sidebar Bottom Start */
@@ -123,3 +135,280 @@
 /* Sidebar Bottom End */
 
 /* Sidebar End */
+
+
+/* Main Start */
+
+main {
+    width: 1601px;
+    height: auto;
+    float: right;
+}
+
+
+/* Header Start */
+
+header {
+    width: 100%;
+    padding: 0 30px 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 48px 32px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);    
+}
+
+.Search_Bar {
+    padding: 0 32px;
+    margin-left: 25px;
+    width: 446px;
+    height: 56px;
+    justify-content: space-around;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+}
+
+.Search_Bar input[type=text] {
+    border: none;
+    background-color: #F8F8F8;
+    opacity: 0.5;
+}
+
+.Search_Bar img {
+    width: 24px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.Profile_Side {
+    display: flex;
+    align-items: center;
+}
+
+.Profile_Side img {
+    margin: 0 30px;
+}
+
+.Pro {
+    color: #FF2288;
+}
+
+.Upload {
+    color: white;
+    border: 20px solid #FF2288;
+    background-color: #FF2288;
+    border-radius: 15px;
+}
+
+/* Header End */
+
+/* Main Section Start */
+
+.Main_Section {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.Filters {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Filter_Categories a {
+    color: #222222;
+    margin-left: 50px ;
+}
+
+.Filter_Button {
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.Filter_Button img {
+    margin-right: 15px;
+}
+
+.Filter_Button span {
+    color: #222222;
+    vertical-align: super;
+}
+
+.Main_Section_Content {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Content_Box {
+    margin-top: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Content_Box p {
+    color: #222222;
+    width: 90%;
+    text-align: center;
+}
+
+.Content_Box img {
+    width: 100%;
+}
+
+.Load_More {
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    width: 289px;
+    height: 56px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+
+.Load_More span {
+    color: #222222;
+}
+
+/* Main Section End */
+
+/* Designer Section Start */
+
+.Top_Designers_Section {
+    width: 100%;
+    height: 500px;
+    background-color: #FAFAFA;
+    margin-top: 55px;
+    padding: 0 150px;
+    flex-wrap: wrap;
+}
+
+.Section_Title {
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 67px;
+}
+
+.Section_Title h2 {
+    font-size: 32px;
+}
+
+.Section_Title span {
+    opacity: 0.4;
+}
+
+.Top_Designers_Box {
+    margin: 54px 25px 0 0;
+    width: 132px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.Top_Designers_Box h3 {
+    color:#222222;
+}
+
+.Top_Designers_Box span {
+    color: #222222;
+    font-size: 12px;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+
+.Follow_Button {
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    max-width: 132px;
+    width: 132px;
+    height: 44px;
+    margin: 20px 0 70px 0;
+}
+
+.Follow_Button span {
+    display: flex;
+    justify-content: center;
+    color: #222222;
+    opacity: 1;
+}
+
+.Following_Button {
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    max-width: 132px;
+    width: 132px;
+    height: 44px;
+    margin: 20px 0 70px 0;
+}
+
+.Following_Button span {
+    display: flex;
+    justify-content: center;
+    color: #222222;
+    opacity: 1;
+}
+
+/* Designer Section End */
+
+
+/* More Info Start */
+
+.More_Info {
+    max-width: 1094px;
+    height: 398px;
+    margin: 69px 325px 50px 149px;
+    /* flex-direction: column; */
+}
+
+.Info_Dump_Column_1 {
+    max-width: 142px;
+    margin-right: 172px;
+}
+
+.More_Info a {
+    color: #222222;
+}
+
+.Even_More_Info {
+    flex-direction: column;
+    padding-top: 36px;
+    padding-bottom: 41px;
+}
+
+.Even_More_Info a {
+    margin-bottom: 20px;
+}
+
+.Info_Dump_Column_2 {
+    max-width: 165px;
+    margin-right: 149px;
+}
+
+.Info_Dump_Column_3 {
+    max-width: 112px;
+    margin-right: 202px;
+}
+
+/* More Info End */
+
+/* Footer Start */
+
+.Footer_Box {
+    max-width: 1235px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.Smartacademy a {
+    color: #222222;
+    font-weight: bolder;
+}
+
+/* Footer End */
+
+/* Main End */
