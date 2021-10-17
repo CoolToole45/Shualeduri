@@ -1,0 +1,25 @@
+@media (min-width: 576px) {
+    .Sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .Sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .Sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 1400px) {
+    
+}

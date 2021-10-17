@@ -18,6 +18,7 @@ a {
 .Page_Container {
     max-width: 1940px;
     width: 100%;
+    margin: 0 auto;
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
@@ -28,10 +29,11 @@ a {
 /* Sidebar Start */
 
 .Sidebar {
+    display: block;
     font: inherit;
-    float: left;
-    height: 1080;
-    width: 319px;
+    /* float: left; */
+    max-width: 319px;
+    width: 100%;
     /* position: fixed; */
     z-index: 1;
     background-color: #222222;
@@ -140,7 +142,8 @@ a {
 /* Main Start */
 
 main {
-    width: 1601px;
+    max-width: 1601px;
+    width: 100%;
     height: auto;
     float: right;
 }
@@ -185,7 +188,13 @@ header {
 }
 
 .Profile_Side img {
-    margin: 0 30px;
+    margin: 0 15px 0 20px;
+}
+
+.Profile_Img {
+    border: 2px solid #E7E7E7;
+    border-radius: 50px;
+    padding: 10px;
 }
 
 .Pro {
@@ -245,12 +254,18 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition-property: color;
+}
+
+.Content_Box :hover {
+    color: grey;
 }
 
 .Content_Box p {
     color: #222222;
     width: 90%;
     text-align: center;
+    margin: 0 auto;
 }
 
 .Content_Box img {
@@ -281,12 +296,13 @@ header {
     background-color: #FAFAFA;
     margin-top: 55px;
     padding: 0 150px;
+    display: flex;
     flex-wrap: wrap;
 }
 
 .Section_Title {
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     padding-top: 67px;
 }
 
@@ -296,6 +312,11 @@ header {
 
 .Section_Title span {
     opacity: 0.4;
+}
+
+.Top_Designers_Profile {
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .Top_Designers_Box {
@@ -358,8 +379,12 @@ header {
 
 .More_Info {
     max-width: 1094px;
+    width: 100%;
     height: 398px;
     margin: 69px 325px 50px 149px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
     /* flex-direction: column; */
 }
 
@@ -412,3 +437,52 @@ header {
 /* Footer End */
 
 /* Main End */
+
+
+/* Second Page Start */
+
+/* Second Page Table Start */
+
+.Table_Container {
+    padding: 0 160px;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody {
+    text-align: left;
+    transition-property: color;
+}
+
+.Table_Content_Container {
+    text-align: left;
+}
+
+.Table_Titles th {
+    font-size: 18px;
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.Table_Data td {
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    color: #AFAFAF;
+    cursor: pointer;
+}
+
+.Selected td {
+    color: #FF2288;
+}
+
+tbody :hover {
+    background-color: #F2F2F2;
+}
+
+/* Second Page Table End */
+
+/* Second Page End */
