@@ -29,7 +29,6 @@ a {
 
 .Sidebar {
     display: block;
-    font: inherit;
     /* float: left; */
     max-width: 319px;
     width: 100%;
@@ -55,6 +54,7 @@ a {
 
 .Logo span {
     font-weight: bolder;
+    font-family: "Avenir_Book";
 }
 
 .Logo img {
@@ -85,21 +85,21 @@ a {
 
 .Sidebar_Nav li {
     width: 100%;
-    margin: 60px 0; 
+    margin: 40px 0; 
 }
 
-.Sidebar_Nav a {
+.Sidebar_Buttons {
     display: flex;
     align-items: center;
     color: white;
-    transition:all 0.15s linear;
-}
+    padding: 18px 0 18px 30px;
+    font-family: "Avenir_Medium";
+} 
 
-.Sidebar_Nav .Active {
-    border: 20px solid #FF2288;
-    border-radius: 20px;
-    background-color: #FF2288;
-    margin-left: -20px;
+.Sidebar_Buttons:hover {
+    background-color: #ff2288;
+    border-radius: 12px;
+    transition: all 0.3s ease;
 }
 
 /* Sidebar Middle End */
@@ -124,6 +124,7 @@ a {
 .Aside_Bottom a {
     display: flex;
     align-items: center;
+    font-family: "Avenir_Medium";
 }
 
 .Aside_Bottom img {
@@ -132,6 +133,8 @@ a {
 
 .Aside_Bottom span {
     margin-left: 15px;
+    font-family: "Avenir_Heavy";
+    font-size: 12px;
 }
 /* Sidebar Bottom End */
 
@@ -172,8 +175,14 @@ header {
 
 .Search_Bar input[type=text] {
     border: none;
+    outline: none;
     background-color: #F8F8F8;
     opacity: 0.5;
+}
+
+::placeholder {
+    font-family: "Avenir_Heavy";
+    font-size: 14px;
 }
 
 .Search_Bar img {
@@ -199,6 +208,7 @@ header {
 
 .Pro {
     color: #FF2288;
+    font-family: "Avenir_Heavy";
 }
 
 .Upload {
@@ -206,6 +216,7 @@ header {
     border: 20px solid #FF2288;
     background-color: #FF2288;
     border-radius: 15px;
+    font-family: "Avenir_Heavy";
 }
 
 /* Header End */
@@ -225,7 +236,8 @@ header {
 
 .Filter_Categories a {
     color: #222222;
-    margin-left: 50px ;
+    margin-left: 50px;
+    font-family: "Avenir_Book";
 }
 
 .Active_Filter {
@@ -233,6 +245,7 @@ header {
     background-color: #F2F2F2;
     border-radius: 10px;
     padding: 15px;
+    font-family: "Avenir_Heavy" !important;
 }
 
 .Filter_Button {
@@ -248,6 +261,7 @@ header {
 .Filter_Button span {
     color: #222222;
     vertical-align: super;
+    font-family: "Avenir_Heavy";
 }
 
 .Main_Section_Content {
@@ -266,7 +280,8 @@ header {
 }
 
 .Content_Box :hover {
-    color: grey;
+    background-color: #F2F2F2;
+    border-radius: 20px;
 }
 
 .Content_Box p {
@@ -274,6 +289,7 @@ header {
     width: 90%;
     text-align: center;
     margin: 0 auto;
+    font-family: "Avenir_Medium";
 }
 
 .Content_Box img {
@@ -292,6 +308,7 @@ header {
 
 .Load_More span {
     color: #222222;
+    font-family: "Avenir_Heavy";
 }
 
 /* Main Section End */
@@ -316,10 +333,12 @@ header {
 }
 
 .Section_Title h2 {
+    font-family: "Avenir_Heavy";
     font-size: 32px;
 }
 
 .Section_Title span {
+    font-family: "Avenir_Heavy";
     opacity: 0.4;
 }
 
@@ -339,10 +358,12 @@ header {
 
 .Top_Designers_Box h3 {
     color:#222222;
+    font-family: "Avenir_Medium";
 }
 
 .Top_Designers_Box span {
     color: #222222;
+    font-family: "Avenir_Book";
     font-size: 12px;
     opacity: 0.5;
     padding-top: 10px;
@@ -363,6 +384,7 @@ header {
     justify-content: center;
     color: #222222;
     opacity: 1;
+    font-family: "Avenir_Heavy";
 }
 
 .Following_Button {
@@ -379,6 +401,7 @@ header {
     justify-content: center;
     color: #222222;
     opacity: 1;
+    font-family: "Avenir_Heavy";
 }
 
 /* Designer Section End */
@@ -405,6 +428,7 @@ header {
 .More_Info a {
     color: #222222;
 }
+
 
 .Even_More_Info {
     flex-direction: column;
@@ -441,7 +465,7 @@ header {
 
 .Smartacademy a {
     color: #222222;
-    font-weight: bolder;
+    font-family: "Avenir_Black";
 }
 
 /* Footer End */
@@ -454,6 +478,7 @@ header {
 /* Second Page Table Start */
 
 .Table_Container {
+    font-family: "Avenir_Heavy";
     padding: 0 160px;
     margin-top: 50px;
 }
