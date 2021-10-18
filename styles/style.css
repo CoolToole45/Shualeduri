@@ -3,8 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font: inherit    
+    box-sizing: border-box;  
 }
 
 .Flex_Class {
@@ -158,6 +157,7 @@ header {
     align-items: center;
     margin: 32px 48px 32px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);    
+    flex-wrap: wrap;
 }
 
 .Search_Bar {
@@ -165,7 +165,7 @@ header {
     margin-left: 25px;
     width: 446px;
     height: 56px;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #F8F8F8;
     border-radius: 10px;
 }
@@ -220,11 +220,19 @@ header {
 .Filters {
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 .Filter_Categories a {
     color: #222222;
     margin-left: 50px ;
+}
+
+.Active_Filter {
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .Filter_Button {
@@ -304,6 +312,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 67px;
+    width: 100%;
 }
 
 .Section_Title h2 {
@@ -423,6 +432,7 @@ header {
 
 .Footer_Box {
     max-width: 1235px;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
     padding-top: 20px;
@@ -481,6 +491,10 @@ tbody {
 
 tbody :hover {
     background-color: #F2F2F2;
+}
+
+.Table_Titles_Rep {
+    display: none;
 }
 
 /* Second Page Table End */

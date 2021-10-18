@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Avenir_Heavy";
+    src: url(../fonts/Avenir-Heavy.otf);
+}
+
+@font-face {
+    font-family: "Avenir_Medium";
+    src: url(../fonts/Avenir-Medium.otf);
+}
+
+@font-face {
+    font-family: "Avenir_Book";
+    src: url(../fonts/Avenir-Book.otf);
+}
